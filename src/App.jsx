@@ -26,6 +26,7 @@ export default function App() {
         />
       </div>
       <div>
+        <br/>
         <label className="label">Password</label>
         <input
           type="password"
