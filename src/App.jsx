@@ -37,7 +37,13 @@ export default function App() {
       <button onClick={handleLogin} className="button">
         Login
       </button>
-      {message && <p className="paragraph">{message}</p>}
+     {message && (
+        <p
+          className={`paragraph ${message === "Login Successful" ? "success" : message === "Invalid email or password" ? "error" : ""}`}
+        >
+          {message}
+        </p>
+      )}
     </div>
   );
 }
