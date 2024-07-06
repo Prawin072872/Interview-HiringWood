@@ -25,8 +25,9 @@ export default function App() {
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
+      <br/>
       <div>
-        <br/>
+        
         <label className="label">Password</label>
         <input
           type="password"
